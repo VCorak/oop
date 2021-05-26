@@ -63,6 +63,3 @@ echo $duvel->getInfo().PHP_EOL;
 
 echo $duvel->getAlcoholpercentage().PHP_EOL;
 
-
-
-
