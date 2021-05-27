@@ -22,7 +22,9 @@ class Beverage {
 
  $cola = new Beverage("black", 2);
 
- echo $cola->getInfo().PHP_EOL;
+echo $cola->getInfo();
+echo "<br>";
+echo $cola->temperature;
 
 
 

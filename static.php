@@ -1,6 +1,6 @@
 <?php
 
-// Sixth exercise
+// Sixth challenge
 
 class Beverage {
     // Properties
@@ -13,11 +13,11 @@ class Beverage {
         $this->color = $color;
         $this->price = $price;
         $this->temperature = $temperature;
-        self::$timeServed += 1;
+        self::$timeServed ++;
     }
     // Methods
 
-    public static function getTimesServed() : int {
+    public static function getTimeServed() : int {
         return self::$timeServed;
     }
 
@@ -38,11 +38,11 @@ class Beverage {
 }
 
 /*$cola = new Beverage("black", 2);
-
 echo $cola->getInfo().PHP_EOL;*/
-$juice = new Beverage("orange", 2, 3, 2 );
-$tea = new Beverage("green", 2, 3, 2);
-$kombucha = new Beverage("lemon", 2, 3, 2);
+
+$juice = new Beverage("orange", 2, 3);
+$tea = new Beverage("green", 2, 3);
+$kombucha = new Beverage("lemon", 2, 3);
 
 
 
@@ -82,15 +82,6 @@ class Beer extends Beverage {
 
 $duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
-echo "<br>";
-echo $duvel->getInfo();
-echo "<br>";
-echo $duvel->getAlcoholpercentage();
-echo "<br>";
-$duvel->setColor("light");
-echo $duvel->getInfo();
-echo "<br>";
-echo $duvel->beerInfo();
-echo "<br>";
 
-echo Beverage::getTimesServed();
+
+echo Beverage::getTimeServed();
