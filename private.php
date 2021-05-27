@@ -50,9 +50,6 @@ class Beer extends Beverage {
     }
 
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
@@ -69,11 +66,7 @@ class Beer extends Beverage {
 
 $duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 
-echo "<br>";
-echo $duvel->getInfo();
-echo "<br>";
-echo $duvel->getAlcoholpercentage();
-echo "<br>";
+
 $duvel->setColor("light");
 echo $duvel->getInfo();
 echo "<br>";
